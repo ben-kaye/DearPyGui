@@ -162,36 +162,7 @@ def setup_package():
     metadata = dict(
         name='dearpygui',                                      # Required
         version=version_number(),                              # Required
-        author="Jonathan Hoffstadt and Preston Cothren",       # Optional
-        author_email="jonathanhoffstadt@yahoo.com",            # Optional
-        description='DearPyGui: A simple Python GUI Toolkit',  # Required
-        long_description=long_description,                     # Optional
-        long_description_content_type='text/markdown',         # Optional
-        url='https://github.com/hoffstadt/DearPyGui',          # Optional
-        license = 'MIT',
-        python_requires='>=3.7',
-        classifiers=[
-                'Development Status :: 5 - Production/Stable',
-                'Intended Audience :: Education',
-                'Intended Audience :: Developers',
-                'Intended Audience :: Science/Research',
-                'License :: OSI Approved :: MIT License',
-                'Operating System :: MacOS',
-                'Operating System :: Microsoft :: Windows :: Windows 10',
-                'Operating System :: POSIX',
-                'Operating System :: Unix',
-                'Programming Language :: Python :: 3.7',
-                'Programming Language :: Python :: 3.8',
-                'Programming Language :: Python :: 3.9',
-                'Programming Language :: Python :: 3.10',
-                'Programming Language :: Python :: 3.11',
-                'Programming Language :: Python :: 3.12',
-                'Programming Language :: Python :: Implementation :: CPython',
-                'Programming Language :: Python :: 3 :: Only',
-                'Topic :: Software Development :: User Interfaces',
-                'Topic :: Software Development :: Libraries :: Python Modules',
-            ],
-        packages=['dearpygui'],
+        # packages=['dearpygui'], automatically found by setuptools
         package_dir = {'': 'output'},
         package_data={},
         distclass=BinaryDistribution,
